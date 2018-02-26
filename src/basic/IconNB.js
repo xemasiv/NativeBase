@@ -33,6 +33,9 @@ class IconNB extends Component {
 			case "Entypo":
 				this.Icon = Entypo;
 				break;
+			case "Feather":
+				this.Icon = Feather;
+				break;
 			case "FontAwesome":
 				this.Icon = FontAwesome;
 				break;
@@ -76,7 +79,7 @@ class IconNB extends Component {
 
 IconNB.propTypes = {
 	style: PropTypes.oneOfType([PropTypes.object, PropTypes.number, PropTypes.array]),
-	type: PropTypes.oneOf(["Ionicons", "Entypo", "FontAwesome", "Foundation", "MaterialIcons", "MaterialCommunityIcons", "Octicons", "Zocial", "SimpleLineIcons"]),
+	type: PropTypes.oneOf(["Ionicons", "Entypo", "Feather", "FontAwesome", "Foundation", "MaterialIcons", "MaterialCommunityIcons", "Octicons", "Zocial", "SimpleLineIcons"]),
 };
 
 const StyledIconNB = connectStyle("NativeBase.IconNB", {}, mapPropsToStyleNames)(IconNB);
